@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48D38BC3289FEAD1001CC673 /* gentle_alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 48D38BC2289FEAD0001CC673 /* gentle_alarm.mp3 */; };
 		48E11D8E289BB27D00BB4363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E11D8D289BB27D00BB4363 /* AppDelegate.swift */; };
 		48E11D90289BB27D00BB4363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E11D8F289BB27D00BB4363 /* SceneDelegate.swift */; };
 		48E11D92289BB27D00BB4363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E11D91289BB27D00BB4363 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48D38BC2289FEAD0001CC673 /* gentle_alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gentle_alarm.mp3; sourceTree = "<group>"; };
 		48E11D8A289BB27D00BB4363 /* Egg Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Egg Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E11D8D289BB27D00BB4363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48E11D8F289BB27D00BB4363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				48E11D96289BB28100BB4363 /* Assets.xcassets */,
 				48E11D98289BB28100BB4363 /* LaunchScreen.storyboard */,
 				48E11D9B289BB28100BB4363 /* Info.plist */,
+				48D38BC2289FEAD0001CC673 /* gentle_alarm.mp3 */,
 			);
 			path = "Egg Timer";
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E11D9A289BB28100BB4363 /* LaunchScreen.storyboard in Resources */,
+				48D38BC3289FEAD1001CC673 /* gentle_alarm.mp3 in Resources */,
 				48E11D97289BB28100BB4363 /* Assets.xcassets in Resources */,
 				48E11D95289BB27D00BB4363 /* Main.storyboard in Resources */,
 			);

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
     let hardTime = 4*/
     let eggTimes: [String:Int] = ["Soft": 10, "Medium": 15, "Hard": 20]     //dictionary
     
+    var player: AVAudioPlayer?
     var hardness: String = "null"
     var counter = 0
     var timer = Timer()
@@ -44,6 +46,7 @@ class ViewController: UIViewController {
     // called every time interval from the timer
     @objc func timerAction() {
         if(counter < totalTime) {
+            player?.stop()
             OnScreenTextLabel.text = "Egg's are being boiled to be '\(hardness) cored'!                           wait & wait & wait..."
             print("\(counter)")
             counter += 1
@@ -57,7 +60,13 @@ class ViewController: UIViewController {
             totalTime = 0
             counter = 0
             timer.invalidate()
+            playSound()
         }
+    }
+    func playSound() {
+        let url = Bundle.main.url(forResource: "gentle_alarm", withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player!.play()
     }
 }
 
